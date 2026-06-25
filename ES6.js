@@ -32,33 +32,38 @@
 
 
 // arrow function
-const HitungLuasPersegi = (sisi) => {
-    var sisi = 6
+// const HitungLuasPersegi = (sisi) => {
 
-    const luas = (s) => {
-        return s * s 
-    }
-    const keliling = (s) => {
-        return 4 * s
-    }
-    console.log("Luas persegi: ", luas(sisi))
-    console.log("keliling keliling: ", keliling(sisi))
-}
-HitungLuasPersegi(6)
+//     const luas = (s) => {
+//         return s * s 
+//     }
+//     const keliling = (s) => {
+//         return 4 * s
+//     }
+//     console.log("Luas persegi: ", luas(sisi))
+//     console.log("keliling keliling: ", keliling(sisi))
+// }
+// HitungLuasPersegi(6)
 
-console.log("---------------------------")
+// console.log("---------------------------")
 
-const HitungLingkaran = (radius) => {
-    const pi = 22/7
+// const HitungLingkaran = (radius) => {
+//     const pi = 22/7
 
-    const luas = (r) => {
-        return pi * r * r
-    }
-    const keliling = (r) => {
-        return 2 * r * r
-    }
+//     const luas = (r) => {
+//         return pi * r * r
+//     }
+//     const keliling = (r) => {
+//         return 2 * r * r
+//     }
 
-    console.log("Luas lingkaran: ", luas(radius))
-    console.log("keliling lingkaran: ", keliling(radius))
-}
-HitungLingkaran(5)
+//     console.log("Luas lingkaran: ", luas(radius))
+//     console.log("keliling lingkaran: ", keliling(radius))
+// }
+// HitungLingkaran(5)
+
+
+
+let namaDepan = "Muhammad Adiya"
+let namaBelakang = "Dwi Saputra"
+console.log(`Ini Nama depan ku ${namaDepan} dan ini nama belakang ku ${namaBelakang}`)
