@@ -76,6 +76,7 @@
 // hello()
 
 
+// Tugas
 function doAsync(nomorIdPasien){
     return new Promise (function (resolve, reject){
         var dataPasien = [
