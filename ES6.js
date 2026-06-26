@@ -64,6 +64,81 @@
 
 
 
-let namaDepan = "Muhammad Adiya"
-let namaBelakang = "Dwi Saputra"
-console.log(`Ini Nama depan ku ${namaDepan} dan ini nama belakang ku ${namaBelakang}`)
+// let namaDepan = "Muhammad Adiya"
+// let namaBelakang = "Dwi Saputra"
+// console.log(`Ini Nama depan ku ${namaDepan} dan ini nama belakang ku ${namaBelakang}`)
+
+// Enhaced object
+// let nama = "aditya"
+// let person = {
+//     nama : nama,
+//     umur : 23,
+// }
+// console.log(person)
+
+
+// Destructuring Array
+let number = [1,5,6,7,8]
+
+// let number1 = number[0]
+// let number2 = number[1]
+// let number3 = number[2]
+// let number4 = number[3]
+// let number5 = number[4]
+
+// contoh 1
+// let [num1, num2, num3, num4, lastNum] = number
+// console.log(lastNum)
+
+// contoh 2
+let [num1, , , , lastNum] = number
+// console.log(lastNum)
+
+// Destructuring object
+// let names = "aditya"
+// let person = {
+//     nama : names,
+//     umur : 23,
+//     tinggi : 170
+// }
+// console.log(person)
+
+// let {nama, umur, tinggi} = person
+// console.log(nama)
+
+
+// Rest Parameter + Spread Operator
+
+let footbalPlayer = ["Messi", "Ronaldo", "Mbappe", "Mbappe", "Halland", "Neymar"]
+
+let [argentina, portugal, france, ...restPlayerLain] = footbalPlayer
+console.log(restPlayerLain)
+console.log(restPlayerLain[0])
+console.log(restPlayerLain[1])
+
+// contoh rest parameter object
+let names = "aditya"
+let person = {
+    nama : names,
+    umur : 23,
+    tinggi : 170
+}
+console.log(person)
+
+let {nama, ...restPerson} = person
+console.log(nama)
+console.log(restPerson)
+
+// Spread Operator
+let buah = ["apel", "mangga", "strawbery", "jeruk"]
+buah = ["durian", ...buah, "anggur"]
+console.log(buah)
+
+let tumbler = {
+    merk : "MR.DIY",
+    ukuran : "1L",
+    harga : 80000
+}
+tumbler.warna = "hitam"
+tumbler = {...tumbler, bahan:"plastik", bentuk:"bulat"}
+console.log(tumbler)
